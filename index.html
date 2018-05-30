@@ -47,6 +47,32 @@
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script>
+      window.fbMessengerPlugins = window.fbMessengerPlugins || {
+        init: function () {
+          FB.init({
+            appId            : '1678638095724206',
+            autoLogAppEvents : true,
+            xfbml            : true,
+            version          : 'v2.10'
+          });
+        }, callable: []
+      };
+      window.fbAsyncInit = window.fbAsyncInit || function () {
+        window.fbMessengerPlugins.callable.forEach(function (item) { item(); });
+        window.fbMessengerPlugins.init();
+      };
+      setTimeout(function () {
+        (function (d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) { return; }
+          js = d.createElement(s);
+          js.id = id;
+          js.src = "//connect.facebook.net/en_US/sdk.js";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+      }, 0);
+      </script>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
@@ -388,8 +414,6 @@
 			<div class="row row-pb-md">
 
 				
-
-				
 				<div class="col-md-12 text-center">
 					<div class="gtco-widget">
 						<h3>Rester en contact</h3>
@@ -397,6 +421,7 @@
 							<li><a href="#"><i class="icon-phone"></i> 0601719782</a></li>
 							<li><a href="#"><i class="icon-mail2"></i> contact.lapancakerie@gmail.com</a></li>
 							<li><a href="#"><i class="icon-chat"></i> Live Chat</a></li>
+							<li><a href="" class="fb-customerchat" page_id="1209489239186467"><i class="icon-chat"></i>ChatBot</a></li>
 						</ul>
 					</div>
 					<div class="gtco-widget">
