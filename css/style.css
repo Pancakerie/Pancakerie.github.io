@@ -789,7 +789,10 @@ form label {
 .gtco-section.border-bottom {
   border-bottom: 1px solid #e6e6e6;
 }
-
+footer h2{
+  color: white;
+  font-size: 16px;
+}
 #gtco-features {
   background: #e8b068;
 }
