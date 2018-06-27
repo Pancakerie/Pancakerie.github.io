@@ -1,0 +1,28 @@
+.article h1 {
+    font-size: 44px;
+    line-height: 1.5;
+    font-weight: 300;
+    font-family:'LICENSE PLATE USA';
+    text-transform: uppercase;
+    padding-top: 7%;
+    text-align: center;
+  }
+  
+  .article h2 {
+    font-family: "Lato", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin-left: 5%;
+  }
+  .article {
+    background-color: rgb(241, 241, 241);
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .article p {
+    margin-left: 3%;
+    margin-right: 3%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+  }
